@@ -6,7 +6,7 @@ yum -y install nano wget perl;wget --no-check-certificate https://raw.githubuser
 ```
 #### Active:
 ```
-wget --no-check-certificate https://raw.githubusercontent.com/puarudz/v4Panel-1.62.4/main/active.sh;./setup.sh
+wget --no-check-certificate https://raw.githubusercontent.com/puarudz/v4Panel-1.62.4/main/active.sh;chmod -R 777 active.sh;./active.sh
 ```
 
 #### Nulled:
