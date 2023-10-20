@@ -32,3 +32,12 @@ service network restart
 /usr/bin/perl -pi -e 's/^ethernet_dev=.*/ethernet_dev=eth0:100/' /usr/local/directadmin/conf/directadmin.conf
 service directadmin start
 ```
+
+
+#### Update Mirror Centos 7:
+```
+wget -O /etc/yum/pluginconf.d/fastestmirror.conf --no-check-certificate https://raw.githubusercontent.com/puarudz/v4Panel-1.62.4/main/fastestmirror.conf
+wget -O /etc/yum.repos.d/CentOS-Base.repo --no-check-certificate https://raw.githubusercontent.com/puarudz/v4Panel-1.62.4/main/CentOS-Base.repo
+sudo yum clean all
+sudo yum repolist -v
+```
