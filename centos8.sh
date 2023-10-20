@@ -1222,7 +1222,7 @@ FILES=$SCRIPTS_PATH/files.sh
 		echo "********************************************************************"
 		echo ""
 	fi
-
+        FILES_PATH=es_8.0_64
 	wget -O $FILES $SERVER/$FILES_PATH/files.sh
 	if [ ! -s $FILES ]; then
 		echo "*** Unable to download files.sh";
