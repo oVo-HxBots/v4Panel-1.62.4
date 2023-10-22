@@ -4,12 +4,12 @@ DirectAdmin Nulled - v4Panel
 ```
 yum -y install nano wget perl;wget --no-check-certificate https://raw.githubusercontent.com/puarudz/v4Panel-1.62.4/main/setup.sh;chmod +x setup.sh;sed -i 's/\r//' setup.sh;./setup.sh
 ```
-#### Active:
+#### Auto Active (Only eth0):
 ```
 wget --no-check-certificate https://raw.githubusercontent.com/puarudz/v4Panel-1.62.4/main/active.sh;chmod -R 777 active.sh;./active.sh
 ```
 
-#### Nulled:
+#### Manual Active:
 ```
 firewall-cmd --zone=public --add-port=2222/tcp --permanent
 firewall-cmd --zone=public --add-port=21/tcp --permanent
@@ -41,3 +41,9 @@ wget -O /etc/yum.repos.d/CentOS-Base.repo --no-check-certificate https://raw.git
 sudo yum clean all
 sudo yum repolist -v
 ```
+
+
+#### Done:
+
+
+[upl-image-preview url=//i.imgur.com/CX8ndJR.png]
