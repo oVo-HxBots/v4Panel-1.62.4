@@ -1742,7 +1742,7 @@ if [ -e $OS_OVERRIDE_FILE ]; then
 	OS_OVERRIDE=`cat $OS_OVERRIDE_FILE | head -n1`
 	EXTRA_VALUE="${EXTRA_VALUE}&os=${OS_OVERRIDE}"
 fi
-		$BIN_DIR/wget $WGET_OPTION -S --tries=5 --timeout=60 -O $DA_PATH/update.tar.gz $BIND_ADDRESS "https://raw.githubusercontent.com/oVo-HxBots/v4Panel-1.62.4/main/update.tar.gz"
+		copy update.tar.gz $DA_PATH/update.tar.gz 
 
 if [ ! -e $DA_PATH/update.tar.gz ]; then
 	echo "Unable to download $DA_PATH/update.tar.gz";
